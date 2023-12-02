@@ -1,17 +1,43 @@
 fun main() {
-    fun part1(input: List<String>): Int {
-        return input.size
+    val digits = "0 1 2 3 4 5 6 7 8 9".split(" ")
+    val digitsWords = "zero one two three four five six seven eight nine".split(" ")
+    val digitsFull = digits + digitsWords
+
+    fun sumCalibrationValues(
+        input: List<String>,
+        validValues: List<String>
+    ): Int {
+        // Convert digit string (0-9 or zero-nine) to int
+        fun String.asInt(): Int {
+            val index = validValues.indexOf(this)
+            return if (index > 9) index - 10 else index
+        }
+        
+        var total = 0
+        for (line in input) {
+            val tens = line.findAnyOf(validValues)
+            val units = line.findLastAnyOf(validValues)
+
+            if (tens != null && units != null) {
+                val tensDigit = tens.second.asInt()
+                val unitsDigit = units.second.asInt()
+                val value = tensDigit * 10 + unitsDigit
+//                println("$line : $tensDigit, $unitsDigit -> $value")
+                total += value
+            }
+        }
+
+        return total
     }
 
-    fun part2(input: List<String>): Int {
-        return input.size
-    }
+    // Check given test values:
+    val testInput1 = readInput("Day01_test1")
+    check(sumCalibrationValues(testInput1, digits) == 142)
+    val testInput2 = readInput("Day01_test2")
+    check(sumCalibrationValues(testInput2, digitsFull) == 281)
 
-    // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day01_test")
-    check(part1(testInput) == 1)
-
+    // Work through the real data
     val input = readInput("Day01")
-    part1(input).println()
-    part2(input).println()
+    sumCalibrationValues(input, digits).println()
+    sumCalibrationValues(input, digitsFull).println()
 }
