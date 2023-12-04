@@ -51,3 +51,34 @@ Project was created using the [Advent of Code Kotlin Template][template] from Je
 [kotlin]: https://kotlinlang.org
 
 [template]: https://github.com/kotlin-hands-on/advent-of-code-kotlin-template
+
+<style>
+    tr {
+        border: none !important;
+    }
+    td {
+        font-size: 2rem;
+        padding: 0 !important;
+        border: 2px solid #fff !important;
+        width: 2.5em;
+        height: 2.5em;
+        background-color: #fff2 !important;
+        color: #777;
+    }
+    td a {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        display: grid;
+        place-items: center;
+    }
+    tr:nth-child(odd) td:nth-child(odd) a,
+    tr:nth-child(even) td:nth-child(even) a {
+        background-color: #900;
+    }
+    tr:nth-child(odd) td:nth-child(even) a,
+    tr:nth-child(even) td:nth-child(odd) a {
+        background-color: #060;
+    }
+</style>
+
