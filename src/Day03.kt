@@ -1,12 +1,13 @@
 /**
- * Extension function for digit count of an Int
+ * DAY 03 - Parts Schematic
+ *
+ * Fun challenge and I had a decent setup after
+ * part 1 that helped for part 2. But...
+ *
+ * Not sure I did this in a very efficient way.
+ * Lots of nested loops needed to scan the positions
+ * above / below and left / right.
  */
-fun Int.length(): Int {
-    return when (this) {
-        in -9..9 -> 1
-        else -> 1 + (this / 10).length()
-    }
-}
 
 fun main() {
     data class Part(val x: Int, val y: Int, val number: Int)
@@ -230,3 +231,14 @@ fun main() {
     sumPartNumbers().println()
     sumGearRatios().println()
 }
+
+/**
+ * Extension function for digit count of an Int
+ */
+fun Int.length(): Int {
+    return when (this) {
+        in -9..9 -> 1
+        else -> 1 + (this / 10).length()
+    }
+}
+

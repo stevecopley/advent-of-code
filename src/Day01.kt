@@ -1,3 +1,11 @@
+/**
+ * DAY 01 - Calibration
+ *
+ * This was fun. I think my solution worked out pretty
+ * well, solving both parts with just a different set
+ * of validation values... But maybe not... I don't know!
+ */
+
 fun main() {
     val digits = "0 1 2 3 4 5 6 7 8 9".split(" ")
     val digitsWords = "zero one two three four five six seven eight nine".split(" ")
@@ -12,7 +20,7 @@ fun main() {
             val index = validValues.indexOf(this)
             return if (index > 9) index - 10 else index
         }
-        
+
         var total = 0
         for (line in input) {
             val tens = line.findAnyOf(validValues)

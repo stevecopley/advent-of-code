@@ -1,3 +1,9 @@
+/**
+ * DAY 02 - Cubes in a Bag
+ *
+ * This was pretty straightforward
+ */
+
 fun main() {
     val cubeLimits = mapOf("red" to 12, "green" to 13, "blue" to 14)
 
