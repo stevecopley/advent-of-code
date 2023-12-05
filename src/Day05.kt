@@ -36,7 +36,7 @@ fun main() {
         }
 
         fun srcInRange(src: Long): Boolean {
-            return src >= srcStart && src <= srcEnd
+            return src in srcStart..srcEnd
         }
 
         fun srcToDest(src: Long): Long {
@@ -100,7 +100,7 @@ fun main() {
         // Get the seed data from line 1
         val seedData = almanac[0].substring(7).split(" ").map(String::toLong)
         // Generate full seed list based on start / length pairs
-        for (i in 0 until seedData.size step 2) {
+        for (i in seedData.indices step 2) {
             val start = seedData[i]
             val end = start + seedData[i + 1] - 1
             seedRanges.add(Pair(start, end))
