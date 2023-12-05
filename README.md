@@ -13,7 +13,7 @@ Project was created using the [Advent of Code Kotlin Template][template] from Je
         <td><a href="src/Day02.kt">2</a></td>
         <td><a href="src/Day03.kt">3</a></td>
         <td><a href="src/Day04.kt">4</a></td>
-        <td><a href="src/Day05.kt">4</a></td>
+        <td><a href="src/Day05.kt">5</a></td>
     </tr>
     <tr>
         <td>6</td>
