@@ -1,3 +1,6 @@
+import utils.println
+import utils.readInput
+
 /**
  * DAY 03 - Parts Schematic
  *

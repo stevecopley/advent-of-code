@@ -1,3 +1,6 @@
+import utils.println
+import utils.readInput
+
 /**
  * DAY 02 - Cubes in a Bag
  *

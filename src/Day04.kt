@@ -6,6 +6,8 @@
  * turn can earn extra cards and so on.
  */
 
+import utils.println
+import utils.readInput
 import kotlin.math.pow
 
 data class Card(
