@@ -1,22 +1,19 @@
-# Advent of Code 2023
+# Advent of Code
 
-My [Advent of Code][aoc] project with all of my solutions, written using the [Kotlin][kotlin] language, which I'm really
-enjoying.
+My [Advent of Code][aoc] project with all of my solutions, written using the [Kotlin][kotlin] language.
 
-Project was created using the [Advent of Code Kotlin Template][template] from JetBrains.
-
-## My Solutions
+## My 2023 Solutions
 
 <table>
     <tr>
-        <td><a href="src/Day01.kt">1</a></td>
-        <td><a href="src/Day02.kt">2</a></td>
-        <td><a href="src/Day03.kt">3</a></td>
-        <td><a href="src/Day04.kt">4</a></td>
-        <td><a href="src/Day05.kt">5</a></td>
+        <td><a href="src/aoc2023/Day01.kt">1</a></td>
+        <td><a href="src/aoc2023/Day02.kt">2</a></td>
+        <td><a href="src/aoc2023/Day03.kt">3</a></td>
+        <td><a href="src/aoc2023/Day04.kt">4</a></td>
+        <td><a href="src/aoc2023/Day05.kt">5</a></td>
     </tr>
     <tr>
-        <td><a href="src/Day06.kt">6</a></td>
+        <td><a href="src/aoc2023/Day06.kt">6</a></td>
         <td>7</td>
         <td>8</td>
         <td>9</td>
@@ -83,6 +80,11 @@ Project was created using the [Advent of Code Kotlin Template][template] from Je
                             :
                             '
 ```
+
+### Credits
+
+Project was initially created using the [Advent of Code Kotlin Template][template] from JetBrains.
+
 
 [aoc]: https://adventofcode.com
 
