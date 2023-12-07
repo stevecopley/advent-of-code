@@ -1,6 +1,3 @@
-import utils.println
-import utils.readInput
-
 /**
  * DAY 03 - Parts Schematic
  *
@@ -11,6 +8,11 @@ import utils.readInput
  * Lots of nested loops needed to scan the positions
  * above / below and left / right.
  */
+
+package aoc2023
+
+import utils.println
+import utils.readInput
 
 fun main() {
     data class Part(val x: Int, val y: Int, val number: Int)
@@ -223,13 +225,13 @@ fun main() {
 
 
     // Test data checks
-    val testInput = readInput("Day03_test")
+    val testInput = readInput(2023, "Day03_test")
     parseSchematic(testInput)
     check(sumPartNumbers() == 4361)
     check(sumGearRatios() == 467835)
 
     // real data
-    val input = readInput("Day03")
+    val input = readInput(2023, "Day03")
     parseSchematic(input)
     sumPartNumbers().println()
     sumGearRatios().println()

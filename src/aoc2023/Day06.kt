@@ -6,6 +6,8 @@
  * the text, looping in different ways, etc.
  */
 
+package aoc2023
+
 import utils.println
 import utils.readInput
 
@@ -72,7 +74,7 @@ fun main() {
     }
 
     // Test data
-    val testInput = readInput("Day06_test")
+    val testInput = readInput(2023, "Day06_test")
     // For Part 1
     parseResults(testInput)
     check(allWaysToWin() == 288L)
@@ -81,7 +83,7 @@ fun main() {
     check(raceWaysToWin(raceTime, bestDist) == 71503L)
 
     // The real thing
-    val input = readInput("Day06")
+    val input = readInput(2023, "Day06")
     // For Part 1
     parseResults(input)
     allWaysToWin().println()

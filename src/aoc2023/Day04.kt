@@ -6,6 +6,8 @@
  * turn can earn extra cards and so on.
  */
 
+package aoc2023
+
 import utils.println
 import utils.readInput
 import kotlin.math.pow
@@ -118,13 +120,13 @@ fun main() {
 
 
     // Test data
-    val testInput = readInput("Day04_test")
+    val testInput = readInput(2023, "Day04_test")
     val testCards = parseCards(testInput)
     check(sumWinningPoints(testCards) == 13)
     check(countWinningCards(testCards) == 30)
 
     // Real thing
-    val input = readInput("Day04")
+    val input = readInput(2023, "Day04")
     val cards = parseCards(input)
     sumWinningPoints(cards).println()
     countWinningCards(cards).println()

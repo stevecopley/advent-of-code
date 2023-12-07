@@ -1,11 +1,13 @@
-import utils.println
-import utils.readInput
-
 /**
  * DAY 02 - Cubes in a Bag
  *
  * This was pretty straightforward
  */
+
+package aoc2023
+
+import utils.println
+import utils.readInput
 
 fun main() {
     val cubeLimits = mapOf("red" to 12, "green" to 13, "blue" to 14)
@@ -79,11 +81,11 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day02_test")
+    val testInput = readInput(2023, "Day02_test")
     check(gameIDs(testInput) == 8)
     check(gamePowers(testInput) == 2286)
 
-    val input = readInput("Day02")
+    val input = readInput(2023, "Day02")
     gameIDs(input).println()
     gamePowers(input).println()
 }

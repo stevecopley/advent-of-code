@@ -6,6 +6,8 @@
  * of validation values... But maybe not... I don't know!
  */
 
+package aoc2023
+
 import utils.println
 import utils.readInput
 
@@ -42,13 +44,13 @@ fun main() {
     }
 
     // Check given test values:
-    val testInput1 = readInput("Day01_test1")
+    val testInput1 = readInput(2023, "Day01_test1")
     check(sumCalibrationValues(testInput1, digits) == 142)
-    val testInput2 = readInput("Day01_test2")
+    val testInput2 = readInput(2023, "Day01_test2")
     check(sumCalibrationValues(testInput2, digitsFull) == 281)
 
     // Work through the real data
-    val input = readInput("Day01")
+    val input = readInput(2023, "Day01")
     sumCalibrationValues(input, digits).println()
     sumCalibrationValues(input, digitsFull).println()
 }

@@ -10,6 +10,8 @@
  * was actually progressing!
  */
 
+package aoc2023
+
 import utils.println
 import utils.readInput
 
@@ -208,7 +210,7 @@ fun main() {
     }
 
     // Test data
-    val testInput = readInput("Day05_test")
+    val testInput = readInput(2023, "Day05_test")
     parseAlmanac(testInput)
     // Based on individual seed values for Part 1
     val testSeeds = getSeeds(testInput)
@@ -218,7 +220,7 @@ fun main() {
     check(lowestLocation(testSeedRanges) == 46L)
 
     // The real thing
-    val input = readInput("Day05")
+    val input = readInput(2023, "Day05")
     parseAlmanac(input)
     // Based on individual seed values for Part 1
     val seeds = getSeeds(input)
