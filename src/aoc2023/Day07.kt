@@ -77,7 +77,7 @@ fun main() {
                 else {
                     var bestType = HandType.NONE
                     nonWild.forEach { char ->
-                        val testCards = cards.map { it -> if (it == wild) char else it }
+                        val testCards = cards.map { if (it == wild) char else it }
                         val testType = type(testCards)
                         if (testType > bestType) bestType = testType
                     }
