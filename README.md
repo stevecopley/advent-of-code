@@ -15,8 +15,8 @@ My [Advent of Code][aoc] project with all of my solutions, written using the [Ko
     <tr>
         <td><a href="src/aoc2023/Day06.kt">6</a></td>
         <td><a href="src/aoc2023/Day07.kt">7</a></td>
-        <td>8</td>
-        <td>9</td>
+        <td><a href="src/aoc2023/Day08.kt">8</a></td>
+        <td><a href="src/aoc2023/Day09.kt">9</a></td>
         <td>10</td>
     </tr>
     <tr>
