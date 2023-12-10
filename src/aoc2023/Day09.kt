@@ -1,5 +1,5 @@
 /**
- * DAY 08 - Oasis Sensor
+ * DAY 09 - Oasis Sensor
  *
  * Enjoyed this one. Took me a while to work out the recursion
  * but worked in the end. Duplicated the forwards / backwards
@@ -105,7 +105,7 @@ fun main() {
         return histories.sumOf { history -> history.first() }
     }
 
-    
+
     // Test data
     val testInput = readInput(2023, "Day09_test")
     val testHistories = parseSensorData(testInput)
