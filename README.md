@@ -20,7 +20,7 @@ My [Advent of Code][aoc] project with all of my solutions, written using the [Ko
         <td><a href="src/aoc2023/Day10.kt">10</a></td>
     </tr>
     <tr>
-        <td>11</td>
+        <td><a href="src/aoc2023/Day11.kt">11</a></td>
         <td>12</td>
         <td>13</td>
         <td>14</td>
