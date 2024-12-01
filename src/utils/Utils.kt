@@ -3,12 +3,12 @@ package utils
 import java.math.BigInteger
 import java.security.MessageDigest
 import kotlin.io.path.Path
-import kotlin.io.path.readLines
+import kotlin.io.path.readText
 
 /**
  * Reads lines from the given input txt file.
  */
-fun readInput(year: Int, name: String) = Path("src/aoc$year/data/$name.txt").readLines()
+fun readInput(year: Int, name: String) = Path("src/aoc$year/data/$name.txt").readText().trim().lines()
 
 /**
  * Converts string to md5 hash.
