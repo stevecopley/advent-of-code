@@ -40,9 +40,9 @@ fun main() {
         var score = 0
         // Similarity is sum of value in list 1 x occurrences in list 2
         for (id in list1) {
-            val occurances = list2.count { it == id }
-            score += id * occurances
-//            println("$id - $occurances - $score")
+            val occurrences = list2.count { it == id }
+            score += id * occurrences
+//            println("$id - $occurrences - $score")
         }
         return score
     }
