@@ -7,7 +7,7 @@ My [Advent of Code][aoc] project with all of my solutions, written using the [Ko
 <table>
     <tr>
         <td><a href="src/aoc2023/Day01.kt">01</a></td>
-        <td>02</td>
+        <td><a href="src/aoc2023/Day02.kt">02</a></td>
         <td>03</td>
         <td>04</td>
         <td>05</td>
