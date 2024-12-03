@@ -18,7 +18,7 @@ fun main() {
         val reports = mutableListOf<List<Int>>()
         for (line in input) {
             val values = line.split(' ')
-            val levels = values.map { it -> it.toInt() }
+            val levels = values.map { it.toInt() }
             reports.add(levels)
         }
         return reports.toList()
