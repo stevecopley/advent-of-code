@@ -9,7 +9,7 @@ My [Advent of Code][aoc] project with all of my solutions, written using the [Ko
         <td><a href="src/aoc2024/Day01.kt">01</a></td>
         <td><a href="src/aoc2024/Day02.kt">02</a></td>
         <td><a href="src/aoc2024/Day03.kt">03</a></td>
-        <td>04</td>
+        <td><a href="src/aoc2024/Day04.kt">04</a></td>
         <td>05</td>
     </tr>
     <tr>
